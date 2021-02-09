@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Alexander Priyomko - Resume</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
+
+import photographic from './images/Photo.jpg' 
+
+function App() {
+  return (
+    <div className="App">
+      <title>Alexander Priyomko - Resume</title>
+      <div class="container">
       <div class="listResume">
         <div class="head">
           <ul>
           <li>
             <div class="photoContainer">
-              <img class="photo" src="images/Photo.jpg"/>
+              <img class="photo" src={photographic} />
             </div>
           </li>
           <li>
@@ -41,8 +41,10 @@
               <li>QT Creator (second IDE, great experience);</li>
               <li>Android Studio (third IDE, little experience).</li>
             </ul>
+            </p>
           <p>
             Version control system: GIT (great experience), Azure DevOps (TFS), SVN (average experience),
+            </p>
           <p>
             Software platforms, API, frameworks:
             <ul>
@@ -53,6 +55,7 @@
              <li>QT;</li>
              <li>WinAPI.</li>
             </ul>
+            </p>
           <p>
             Markup languages:
             <ul>
@@ -62,6 +65,7 @@
               <li>HTML;</li>
               <li>CSS.</li>
             </ul>
+            </p>
           <p>
             Frontend:
             <ul>
@@ -70,12 +74,14 @@
               <li>React;</li>
               <li>HTML5.</li>
             </ul>
+            </p>
           <p>
             Database management systems (DBMS):
             <ul>
             <li>Microsoft SQL Server (main DBMS, average experience);</li>
             <li>SQLite (fourth DBMS, little experience).</li>
             </ul>
+            </p>
           <p>
             Operating Systems (OS):
             <ul>
@@ -88,5 +94,8 @@
         <p>Email: sashapriyomko@mail.ru</p>
       </div>
     </div>
-  </body>
-</html>
+    </div>
+  );
+}
+
+export default App;
